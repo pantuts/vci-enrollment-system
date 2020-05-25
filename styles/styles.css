@@ -1,0 +1,390 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* general */
+/*@import url(http://fonts.googleapis.com/css?family=Muli);*/
+/*@import url(http://fonts.googleapis.com/css?family=Varela+Round);*/
+
+body { font-family: 'Muli', 'Ubuntu', sans, arial, helvetica; }
+header { font-family: 'Varela Round', 'Ubuntu', serif; }
+html, body{ line-height: 1; }
+ul, ul li { list-style: none; text-decoration: none; }
+div, ul, li, a, header, h1, form, input, label, textarea, img, span, p{ padding: 0; margin: 0; display: block; }
+a { outline: 0; text-decoration: none; }
+a:visited { outline: 0; }
+
+.rounded {
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+/*.lithos { font-family: 'Varela Round', sans, arial; }*/
+
+.logout { overflow: hidden; margin-bottom: 10px; }
+.logout form { float: right; }
+.logout input { width: 100px; padding: 5px; font-size: 12px; color: #e1eaec; background: #415e64; border: 1px solid #08758d; border-radius: 5px; }
+.logout input:hover { background: #42a2b7; color: #222; }
+
+/* end general */
+
+/* container */
+div.container { margin: auto; padding: 0 60px; width: 855px; height: auto; /*background: #B7B8B7*/ background: #eee; }
+/* end container */
+
+/* header */
+header { width: 855px; background: #eee; margin-bottom: 25px; }
+h1 { margin-bottom: 5px; }
+div.menu { width: 855px; overflow: hidden; }
+div.menu ul { width: auto; overflow: hidden; border: 0px; margin-left: 0; ;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-image: -moz-linear-gradient(top,  rgba(50, 50, 58, 1) 0%, rgba(20, 20, 20, 1) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50, 50, 58, 1)), color-stop(100%,rgba(20, 20, 20, 1)));
+  background-image: -webkit-linear-gradient(top,  rgba(50, 50, 58, 1) 0%,rgba(20, 20, 20, 1) 100%);
+  background-image: -o-linear-gradient(top,  rgba(50, 50, 58, 1) 0%,rgba(20, 20, 20, 1) 100%);
+  background-image: -ms-linear-gradient(top,  rgba(50, 50, 58, 1) 0%,rgba(20, 20, 20, 1) 100%);
+  background-image: linear-gradient(to bottom,  rgba(50, 50, 58, 1) 0%,rgba(20, 20, 20, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32323A', endColorstr='#141414',GradientType=0 );
+  opacity: 1; 
+}
+div.menu ul li { float: left; margin-left: 0px; }
+div.menu ul li:first { margin-left: 0px; }
+div.menu ul li a { padding: 20px; overflow: hidden; font-size: 13px; color: #fff;
+    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-image: -moz-linear-gradient(top,  rgba(50, 50, 58, 1) 0%, rgba(20, 20, 20, 1) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50, 50, 58, 1)), color-stop(100%,rgba(20, 20, 20, 1)));
+  background-image: -webkit-linear-gradient(top,  rgba(50, 50, 58, 1) 0%,rgba(20, 20, 20, 1) 100%);
+  background-image: -o-linear-gradient(top,  rgba(50, 50, 58, 1) 0%,rgba(20, 20, 20, 1) 100%);
+  background-image: -ms-linear-gradient(top,  rgba(50, 50, 58, 1) 0%,rgba(20, 20, 20, 1) 100%);
+  background-image: linear-gradient(to bottom,  rgba(50, 50, 58, 1) 0%,rgba(20, 20, 20, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32323A', endColorstr='#141414',GradientType=0 );
+  opacity: 1; 
+}
+div.menu ul li a:hover {
+  box-shadow: 0px 0px 24px 1px #000000 inset;
+  -webkit-box-shadow: 0px 0px 24px 1px #000000 inset;
+  -moz-box-shadow: 0px 0px 24px 1px #000000 inset;
+  -ms-box-shadow: 0px 0px 24px 1px #000000 inset;
+  -o-box-shadow: 0px 0px 24px 1px #000000 inset;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-image: -moz-linear-gradient(top,  rgba(38, 38, 44, 1) 0%, rgba(7, 7, 7, 1) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(38, 38, 44, 1)), color-stop(100%,rgba(7, 7, 7, 1)));
+  background-image: -webkit-linear-gradient(top,  rgba(38, 38, 44, 1) 0%,rgba(7, 7, 7, 1) 100%);
+  background-image: -o-linear-gradient(top,  rgba(38, 38, 44, 1) 0%,rgba(7, 7, 7, 1) 100%);
+  background-image: -ms-linear-gradient(top,  rgba(38, 38, 44, 1) 0%,rgba(7, 7, 7, 1) 100%);
+  background-image: linear-gradient(to bottom,  rgba(38, 38, 44, 1) 0%,rgba(7, 7, 7, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26262C', endColorstr='#070707',GradientType=0 );
+  opacity: 1;
+}
+div.menu ul li.about:hover ul.dropdown, div.menu ul li.about:hover ul.dropdown li { display: block; }
+div.menu ul.dropdown { display: none; position: absolute; z-index: 999; overflow: hidden; }
+div.menu ul.dropdown li { clear: left; width: 200px; height: 27px; position: relative; border-bottom: 1px solid #222; margin-bottom: 2px; text-align: center; }
+div.menu ul.dropdown li a { padding: 8px; background: #8EC419; color: #2B3A07; }
+/* end header */
+
+/* article */
+article.homebody { width: 100%; height: 540px; padding: 0; position: relative; overflow: hidden; margin-top: -15px; }
+
+#amazingslider-1 { width: auto; margin-right: -200px; float: left; }
+div[class^="amazingslider-slider"] { margin-left: 0px; }
+/* end amazing slider */
+
+/* month events */
+div.month-events { width: 263px; height: auto; min-height: 424px; background: #fff; float: right; top: 0; right: 0; position: absolute; margin-top: 15px; border: 1px solid #161619; max-height: 515px; }
+div.month-events p { background: #161619; text-align: center; padding: 5px 10px; margin-bottom: 10px; color: #ddd; font-size: 17px; }
+div.month-events ul { margin: 0 10px 10px 10px; overflow: hidden; display: inline-block; width: 100%; }
+ul.me-ul li { float: left; display: table; height: 30px; }
+ul.me-ul li.date { margin-right: 5px; text-align: center; width: 29px; padding: 5px; font-size: 10px; background: #161619; border-radius: 9999px; }
+ul.me-ul li.date span { margin-top: 10px; color: #ddd; }
+ul.me-ul li.event { width: 189px; text-align: justify; font-size: 13px; padding: 5px; background: #cbe4fe; border-radius: 5px; color: #161619; }
+/* end month events */
+/* end article */
+
+
+/* article message */
+article.message { margin-top: 50px; }
+div.container-beforefooter { margin-bottom: 30px; display: table; overflow: hidden; }
+div.beforefooter { background: #fff; width: 260px; height: 170px; overflow: hidden; text-align: justify; font-size: 11px; float: left; margin-right: 31px; position: relative; border: 1px solid #666; }
+div.beforefooter:last-child { margin-right: 0; }
+div.beforefooter ul { background: #fff; height: 170px; width: 100%; }
+div.beforefooter ul .title { text-align: center; width: 100%; font-size: 16px; padding: 10px 0; background: #08AF1B; margin-bottom: 5px; }
+div.beforefooter ul .picture { float: left; margin-left: 5px; }
+div.beforefooter ul .sub { font-size: 10px; font-weight: bold; width: 180px; float: right; margin-right: 5px; }
+div.beforefooter ul .content, div.beforefooter ul .more { float: right; width: 180px; margin-right: 5px; }
+div.beforefooter ul .more { position: absolute; right: 0; bottom: 5px; }
+div.beforefooter ul .more a, div.beforefooter ul .more a:visited { float: right; color: #fbac3c; }
+/* end article message */
+
+/* footer */
+footer { background: #5c170e; overflow: hidden; margin-top: 30px; }
+.footmenu { margin: 0 auto; border-bottom: 1px solid #47120b; }
+.footmenu ul { overflow: hidden; margin: 0 auto; width: 653px; }
+.footmenu ul li { float: left; padding: 20px 25px; width: auto; }
+.footmenu ul li:last-child { padding-right: 0; }
+.footmenu ul li a { font-size: 12px; color: #fff; }
+.footmenu ul li a:hover { text-decoration: underline; color: #ee8509; }
+.copyr, .feeds { width: 45%; margin-bottom: 10px; }
+.copyr { float: left; padding: 20px 0; font-size: 14px; color: #eee; }
+.copyr p { margin-left: 20px; }
+.feeds { float: right; padding: 7px 0; }
+.feeds ul { float: right; margin-right: 20px; }
+.feeds ul li { float: left; margin-right: 5px; }
+/*end footer */
+
+/* ADMISSION page style */
+.bodyadms { overflow: hidden; text-align: justify; }
+.bodyadms .enroll, .bodyadms .needed { padding: 10px; position: relative; }
+.bodyadms .enroll { width: 400px; position: relative; float: left; }
+.bodyadms .howneed { font-size: 27px; font-weight: normal; color: #076D0A; margin: 0 auto; display: table; margin-bottom: 20px; }
+.bodyadms img { margin: 0 auto; }
+.bodyadms .enroll p { font-size: 12px; }
+.bodyadms .needed { width: 265px; float: right; }
+.bodyadms .needed ul { background: #F9F9F9; margin-bottom: 15px; position: relative; overflow: hidden; border: 1px solid #666; }
+.bodyadms .needed ul .title { /*color: #05490C;*/color: #333; font-size: 18px; text-align: center; background: #08AF1B; padding: 7px 0; border-bottom: 1px solid #666; }
+.bodyadms .needed ul .content { font-size: 14px; line-height: 120%; width: 90%; margin: 5px auto; }
+/* end ADMISSION page style */
+
+article.body { overflow: hidden; }
+
+/* courses */
+div.bcourse { margin-bottom: 20px; overflow: hidden; background: #F9F9F9; padding: 10px 0; border: 1px solid #ddd; }
+.bcourse span img { margin: 0 auto; }
+.bcourse p.right, .bcourse p.left { width: 390px; margin: auto; text-align: justify; margin-top: 10px; font-size: 14px; line-height: 110%; }
+.bcourse p.right { float: right; margin-right: 33px; }
+.bcourse p.left { float: left; margin-left: 32px; }
+/* end courses */
+
+/* history */
+article.hist { overflow: hidden; }
+div.history { overflow: hidden; width: 570px; float: left; }
+div.history img { margin-left: -2px; width: 100%; padding: 0; }
+div.history .para { width: 320px; height: 300px; text-align: center; font-size: 11px; letter-spacing: 1px; position: absolute; margin-top: -430px; margin-left: 125px; line-height: 105%; }
+.hist .side { width: 282px; height: auto; float: right; overflow: hidden; }
+.hist .side ul { width: 280px; height: 170px; margin-bottom: 18px; background: #fff; border: 1px solid #444; overflow: hidden; font-size: 12px; }
+.hist .side ul:first-child { text-align: center; font-size: 16px; }
+.hist .side ul li.title { padding: 10px 0; text-align: center; background: #08AF1B; font-size: 18px; color: #333; }
+.hist .side ul li.content { width: 250px; margin: 0 auto; overflow-y: auto; height: 113px;; margin-top: 20px; }
+/* end history */
+
+/* register-login */
+article.reglog { overflow: hidden; position: relative; }
+.reglog .left { max-width: 555px; overflow: hidden; float: left; line-height: 110%; }
+.reglog .side { background: #F9F9F9; border: 1px solid #ddd; max-width: 280px; float: right; padding: 10px; }
+.reglog span.rl { font-size: 20px; margin-bottom: 15px; font-weight: 600; color: #3c3c3c; }
+.reglog .access .rl { margin-top: 20px; margin-bottom: 20px; }
+.ofcourses ul { overflow: hidden; }
+.ofcourses ul li { margin-bottom: 2px; }
+.ofcourses ul li a, .ofcourses ul li a:visited { color: #097288; margin-left: 30px; }
+.ofcourses ul li a:hover { text-decoration: underline; }
+.ofcourses a:before { content: '⁋  '; }
+.access p { text-align: justify; }
+.guides ul { overflow: hidden; margin-top: 10px; }
+.guides ul li.num { font-size: 18px; margin-bottom: 10px; font-weight: 600; color: #3c3c3c; }
+.guides ul li.cont { text-align: justify; }
+.reglog form { overflow: hidden; margin-bottom: 10px; }
+.reglog form input[type="text"], .reglog form input[type="password"] { padding: 5px; margin-bottom: 7px; font-size: 14px; width: 250px; }
+.reglog form label { margin-bottom: 2px; }
+.reglog form input[type="submit"] { width: 100px; height: 30px; }
+.reglog form p.forgot a, .reglog form p.forgot a:visited { color: #0F7D7F; line-height: 110%; margin-top: 10px; }
+p.forgot a:hover { text-decoration: underline; }
+/* end register-login */
+
+/* dashboard */
+article.studash { overflow: hidden; position: relative; }
+.studash p.req { margin-bottom: 15px; line-height: 110%; }
+.studash .left, .studash .right { background: #F9F9F9; overflow: hidden; width: 385px; padding: 15px; border: 1px solid #ddd; }
+.studash .left { float: left; }
+.studash .right { float: right; }
+.studash form p { margin-bottom: 10px; position: relative; }
+.studash form label { margin-bottom: 3px; font-size: 15px; }
+.studash form input[type="text"] { width: 300px; height: 15px; padding: 5px; font-size: 14px; }
+.studash form select  { margin: 0 auto; width: 80px; }
+.studash form input[type="submit"] { width: 100px; padding: 5px; }
+/* end dashboard */
+
+/* dashboard course */
+article.stucour { position: relative; }
+.stucour .course-year { overflow: hidden; position: relative; margin-top: -10px; }
+.stucour .course-year form.cy { overflow: hidden; }
+form.cy input[type="submit"] { width: 100px; float: right; }
+.stucour .course { overflow: hidden; position: relative; margin-top: 20px; background-color: 0; }
+.stucour .course ul.rowtitle { overflow: hidden; border: 1px solid #222; font-weight: bold; background: #F9F9F9; }
+.stucour .course ul.rowtitle li { float: left; padding: 5px; border-right: 1px solid #222; text-align: center; }
+.stucour .course ul.rowtitle li:last-child { border-right: 0; }
+.stucour .course ul.rowtitle li.code { width: 120px; }
+.stucour .course ul.rowtitle li.desc { width: 425px; }
+.stucour .course ul.rowtitle li.units { width: 40px; }
+.stucour .course ul.rowtitle li.time { width: 160px; }
+.stucour .course ul.rowtitle li.room { width: 50px;}
+.stucour .course ul.cour { border-top: 0; font-size: 14px; font-weight: normal; }
+.stucour .course ul.cour li.desc { text-align: left; }
+.stucour .course ul.cour li.time { font-size: 11px; }
+.stucour .course form input[type="submit"] { float: right; width: 100px; padding: 3px 0; margin-top: 10px; }
+/* end dashboard course */
+
+/* dashboard profile */
+article.stuprof { overflow: hidden; position: relative; }
+.stuprof .vform { overflow: hidden; }
+.stuprof .vform ul.rowtitle { overflow: hidden; border: 1px solid #222; font-weight: bold; background: #F9F9F9; }
+.stuprof .vform ul.rtitle { margin-top: 10px; }
+.stuprof .vform ul.rowtitle li { float: left; padding: 5px; border-right: 1px solid #222; text-align: center; }
+.stuprof .vform ul.rowtitle li:last-child { border-right: 0; }
+.stuprof .vform ul.rowtitle li.code { width: 120px; }
+.stuprof .vform ul.rowtitle li.desc { width: 425px; }
+.stuprof .vform ul.rowtitle li.units { width: 40px; }
+.stuprof .vform ul.rowtitle li.time { width: 160px; }
+.stuprof .vform ul.rowtitle li.room { width: 50px; }
+.stuprof .vform ul.cour { border-top: 0; font-size: 14px; font-weight: normal; }
+.stuprof .vform ul.cour li.desc { text-align: left; }
+.stuprof .vform ul.cour li.time { font-size: 11px; }
+.stuprof .vform ul.cour li.room { font-size: 12px; }
+/* end dashboard profile */
+
+/* vci form */
+/*div.vform { width: 800px; margin: auto; }*/
+/*div.vform ul.vheadl, div.vform ul.vheadr { overflow: hidden; width: 100%; margin: 10px auto 5px auto; }
+.vheadl li, .vheadr li { float: left; width: auto; line-height: 110%; background: orange; background: yellow; }
+.vheadl span.val, .vheadr span.val { width: 100px; }
+span.cval { margin-left: 50px; width: 100px; }
+.v2 { border-top: 1px solid #222; padding-top: 10px; }
+span.cval { background: red; max-width: 150px; }
+span.val { background: blue; max-width: 200px; }
+span.sign { width: 100%; margin-top: 15px; }*/
+div.vform { width: 100%; position: relative; overflow: hidden; }
+.vform .vleft, .vform .vright { width: 425px; overflow: hidden; margin-top: 10px; }
+.vleft { float: left; }
+.vright { float: right; }
+.vright .val { max-width: 200px; display: inline-block; float: right; }
+.vform .val { color: #094042; }
+.vform .vleft p, .vform .vright p { margin-bottom: 10px; }
+.vright p { margin-left: 50px; }
+.vl, .vr { padding-top: 10px; border-top: 1px solid #222; }
+.vl .val { max-width: 200px; display: inline-block; float: right; margin-right: 30px; }
+/*.vr p { margin-left: 50px; }*/
+.vr .val { max-width: 300px; }
+.vl, .vr { margin-bottom: 10px; }
+.vform .rowtitle { clear: both; margin-top: }
+span.sign { width: 100%; margin-top: 30px; width: 100%; margin-bottom: 20px; }
+p.reminder { width: 100%; }
+span.topdf { background: #68B6C4; width: auto; display: inline-block; margin-top: 10px; padding: 10px; border-radius: 5px; color: #fff; }
+span.topdf:hover { background: #74CBDB; cursor: pointer; }
+/* end vci form */
+
+/* forgot password, reset password */
+div.forg { overflow: hidden; position: relative; }
+.forg form p { margin-bottom: 10px; }
+.forg form p label { margin-bottom: 10px; }
+.forg input[type="text"], .forg input[type="password"] { width: 250px; font-size: 14px; padding: 5px; }
+.forg input[type="submit"] { width: 100px; padding: 5px; }
+/* end forgot password, reset password */
+
+/* gallery */
+div.gallery { overflow: hidden; padding: 10px; width: 100%; }
+.gallery a { display: inline-block; margin: 0 auto; margin-left: 11px; }
+.gallery a img { width: 150px; height: 100px; margin: 0 auto; }
+/* end gallery */

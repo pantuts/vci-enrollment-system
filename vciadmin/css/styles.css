@@ -1,0 +1,186 @@
+ font */
+/*@import url(http://fonts.googleapis.com/css?family=Muli);*/
+/*@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);*/
+
+body { font-family: 'Ubuntu', sans, arial, helvetica; }
+header { font-family: 'Varela Round', monospace, serif; }
+html, body{ line-height: 1; }
+ul, ul li { list-style: none; text-decoration: none; }
+div, ul, li, a, header, h1, form, input, label, textarea, img, span, p{ padding: 0; margin: 0; display: block; width: auto; }
+a { outline: 0; text-decoration: none; }
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+
+ /* login */
+ form.login { width: 300px; }
+ form.login p, .login input.text { width: 290px; height: 35px; margin-bottom: 30px; }
+ form.login input#submit { width: 150px; height: 30px; margin: 10px auto; }
+
+ /* admin */
+ .admin { width: 1050px; height: auto; margin: 0 auto; background: #EAEAEA; overflow: hidden; position: relative; padding: 20px 0 0 0; }
+ .admin header img { position: relative; margin: 0 auto; }
+
+/* nav */
+.admin nav { background: #1d1919; overflow: hidden; width: auto; margin-top: 20px; border-radius: 5px; }
+.admin nav ul { overflow: hidden; width: auto; }
+.admin nav ul li { float: left; padding: 10px; }
+.admin nav a, .admin nav a:visited { color: #ccc; }
+.admin nav ul li a:hover { text-decoration: underline; }
+
+/* processes pre-en */
+.processes { width: 1048px; position: relative; border: 1px solid #555; margin: 15px auto; }
+
+/* search */
+.search { overflow: hidden; margin-top: 15px; }
+.search input { float: right; height: 30px; width: 350px; border-radius: 15px; border: 1px solid #bbb; margin-right: 5px; padding: 2px 10px; font-size: 14px; }
+
+/* display */
+ul.display { overflow: hidden; height: auto; position: relative; border-top: 1px solid #222; border-bottom: 1px solid #222; background: #DDD; }
+ul.display  li { float: left; padding: 5px 10px; font-weight: bold; font-size: 15px; }
+ul.display li.dnc { width: 450px; border-right: 1px solid #222; }
+
+/* result */
+ul.res { height: auto; border-bottom: 0; background: #afc7c9; }
+ul.res:last-child { border-bottom: 1px solid #222; margin-bottom: 5px; }
+ul.res li { padding: 5px 10px; overflow: hidden; font-size: 11px; font-weight: normal; }
+ul.res span { float: left; margin-right: 20px; }
+ul.res span:hover { cursor: pointer; text-decoration: underline; }
+ul.res span.del { color: red; }
+ul.res span.view { color: #32494a; }
+ul.resb { background: #b6e3e5; }
+
+/* end admin */
+
+/* pre-en-edit and enrollee */
+.pre-en-edit, .enrollee { padding: 10px; overflow: hidden; position: relative; }
+.pre-en-edit div, .pre-en-edit ul, .pre-en-edit p, .enrollee div, .enrollee ul, .enrollee p { overflow: hidden; position: relative; }
+.pre-en-edit .profile, .enrollee .profile { width: 100%; height: auto; overflow: hidden; border-bottom: 1px solid #222; padding-bottom: 10px; }
+.pre-en-edit .catval, .enrollee .catval { color: #094042; }
+.pre-en-edit span.fec, .enrollee span.fec { margin-bottom: 5px; width: 100%; }
+.pre-en-edit span.email, .enrollee span.email { margin-bottom: 15px; }
+.pre-en-edit .fullname, .enrollee .fullname { font-size: 17px; }
+.pre-en-edit .left span.cat, .pre-en-edit .right span.cat,
+.enrollee .left span.cat, .enrollee .right span.cat { width: auto; position: relative; float: left; }
+.pre-en-edit span.catval, .enrollee span.catval { width: auto; float: right; max-width: 400px; height: 17px; }
+.pre-en-edit .left p, .pre-en-edit .right p,
+.enrollee .left p, .enrollee .right p { margin-bottom: 5px; font-size: 15px; }
+.pre-en-edit .left, .enrollee .left { width: 500px; float: left; text-align: right; }
+.pre-en-edit .right, .enrollee .right { width: 385px; float: right; }
+
+.processes .deleted { padding: 10px; position: relative; }
+.processes .deleted span { margin-bottom: 5px; }
+.processes .deleted ul { overflow: hidden; }
+.processes .deleted ul li { margin-bottom: 3px; }
+
+/* course and subjects*/
+.pre-en-edit .cosubs, .enrollee .cosubs { overflow: hidden; width: 100%; margin-top: 20px; position: relative; }
+.pre-en-edit .cosubs .co, .enrollee .cosubs .co { font-weight: bold; }
+.pre-en-edit .rowtitle, .enrollee .rowtitle { overflow: hidden; width: 100%; font-size: 15px; margin-top: 15px; background: #ddd; color: #094042; }
+.pre-en-edit .title, .enrollee .title { color: #000; }
+.enrollee .rowtitle { border-right: 1px solid #222; }
+.pre-en-edit .rowtitle li.rt, .enrollee .rowtitle li.rt { font-weight: bold; }
+.pre-en-edit .rowtitle li, .enrollee .rowtitle li { float: left; border: 1px solid #222; padding: 5px; text-align: center; height: 25px; }
+.pre-en-edit .rowtitle li.code, .enrollee .rowtitle li.code { width: 110px; border-right: none; }
+.pre-en-edit .rowtitle li.desc, .enrollee .rowtitle li.desc { width: 510px; border-right: none; }
+.enrollee .rowtitle li.code { width: 125px; }
+.enrollee .rowtitle li.desc { width: 560px; }
+.pre-en-edit .rowtitle li.units, .pre-en-edit .rowtitle li.room,
+ .enrollee .rowtitle li.units, .enrollee .rowtitle li.room { width: 50px; border-right: none; }
+.pre-en-edit .rowtitle li.room, .enrollee .rowtitle li.room { width: 60px; }
+.pre-en-edit .rowtitle li.time, .enrollee .rowtitle li.time { width: 230px; border-right: none; }
+.pre-en-edit .rowtitle li.action { width: 66px; }
+
+.pre-en-edit .cosubs .subjects, .pre-en-edit .addsubj .subjects, .enrollee .cosubs .subjects { margin-top: 0; }
+.enrollee .subjects { border-right: 1px solid #222; }
+.pre-en-edit .subjects li, .enrollee .subjects li { border-top: none; font-size: 11px; }
+.pre-en-edit .subjects li.desc, .enrollee .subjects li.desc { text-align: left; width: 510px; }
+.enrollee .subjects li.desc { width: 560px; }
+.enrollee .subjects li.code { width: 125px; }
+.pre-en-edit .subjects li.time, .pre-en-edit .cosubs .subjects li.room, .enrollee .subjects li.time { font-size: 9px; }
+.pre-en-edit .subjects li.action { color: red; }
+.pre-en-edit .subjects li.action:hover { cursor: pointer; text-decoration: underline; }
+
+.pre-en-edit .addsubj { width: 100%; margin-top: 20px; }
+.pre-en-edit .addsubj span { margin-bottom: 10px; }
+.pre-en-edit .addsubj .subjects { border-top: 1px solid #222; margin-bottom: 2px;}
+/*.pre-en-edit .addsubj p { margin-bottom: 3px; font-size: 15px; color: #05a1a7; line-height: 120%; }
+.pre-en-edit .addsubj p:hover { cursor: pointer; text-decoration: underline; }*/
+
+.pre-en-edit .save, .enrollee .delete { width: auto; float: right; height: auto; margin-top: 20px; position: relative; text-align: center; }
+.pre-en-edit .save .saveR, .pre-en-edit .save .delR, .enrollee .delete span { width: 100%; background: #36C0E2; padding: 10px; border-radius: 5px; color: #175766; margin-top: 5px; }
+.pre-en-edit .save .saveR:hover, .enrollee .delete .saveR:hover,
+.pre-en-edit .save .delR:hover, .enrollee .delete .delR:hover { background: #1F8096; cursor: pointer; color: #36C0E2; }
+.pre-en-edit .save .delR { background: #FC7674; color: #931313; }
+.pre-en-edit .save .delR:hover { background: #ED4B4B; color: #FFD1D1; }
+/* end course and subjects */
+
+/* end pre-en-edit, enrollee */
+
+/* schedule/subjects */
+.sched { padding: 10px; position: relative; overflow: hidden; }
+.selcourse-d { width: 100%; position: relative; overflow: hidden; }
+.selcourse-d p { line-height: 1; }
+.selcourse-d select { width: 240px; border: 1px solid #222; margin-top: 15px; background: #f8f2f2; }
+
+.filter { width: 100%; overflow: hidden; margin-top: 15px; }
+.filter p { float: left; line-height: 120%; }
+.filter p.byyear { margin-right: 30px; }
+.filter p input { float: left; }
+
+.sched .subjects { margin-top: 15px; position: relative; overflow: hidden; }
+.sched .subjects ul { /*margin-bottom: 5px; */overflow: hidden; /*border: 1px solid #222;*/ vertical-align: center; height: auto; /*padding: 0 5px;*/ }
+.sched .subjects ul.rowtitle { text-align: center; font-size: 13px; }
+.sched .subjects ul.rowtitle li.rcode { width: 120px; }
+.sched .subjects ul.rowtitle li.rdesc { width: 420px; }
+.sched .subjects ul.rowtitle li.runits { width: 40px; }
+.sched .subjects ul.rowtitle li.rtime { width: 140px; }
+.sched .subjects ul.rowtitle li.rroom, .sched .subjects ul.rowtitle li.ryear, .sched .subjects ul.rowtitle li.rsem { width: 40px; }
+.sched .subjects ul input { font-size: 12px; height: 30px; }
+.sched .subjects ul li { float: left; vertical-align: center; padding: 5px 0; overflow: hidden; height: 40px; margin-right: 5px; }
+.sched .subjects ul li.code input { width: 120px; }
+.sched .subjects ul li.desc input { width: 420px; }
+.sched .subjects ul li.units input { width: 40px; }
+.sched .subjects ul li.time input { width: 140px; }
+.sched .subjects ul li.room input, .sched .subjects ul li.year input, .sched .subjects ul li.sem input { width: 40px; }
+.sched .subjects ul li input { border: 1px solid #ccc; border-radius: 3px; padding: 2px; }
+.sched .subjects ul li input:disabled { background: #fff7f7; color: #827c7c; }
+.sched .subjects ul li input:enabled { border: 1px solid #242121; }
+.sched .subjects ul li.edit, .sched .subjects ul li.delete { width: 50px; text-align: center; padding: 10px 0 0 0; }
+.sched .subjects ul li.edit { color: #175766; }
+.sched .subjects ul li.delete { color: #931313; }
+.sched .subjects ul li.edit:hover, .sched .subjects ul li.delete:hover { cursor: pointer; }
+
+.sched .addsubj { background: #1F8096; width: 120px; padding: 10px; border-radius: 5px; margin: 0 auto; z-index: 999; margin-top: 15px; text-align: center; }
+.sched .addsubj:hover { cursor: pointer; color: #ccc; }
+ /* end schedule/subjects */
+
+ /* calendar events */
+ div.events { position: relative; overflow: hidden; }
+ div.month { width: 220px; padding: 10px; float: left; }
+ div.month p, div.eventinp p { margin: 10px 0 0 10px; }
+ div.month ul.smonth, div.eventinp ul { position: relative; overflow: hidden; margin: 10px 0 0 10px; }
+ div.month select { margin: 10px 0 0 10px; }
+ .smonth li { margin-bottom: 10px; }
+ .smonth li input { float: left; margin-right: 20px; }
+ div.eventinp { padding: 10px; width: 805px; float: right; position: relative; overflow: hidden; }
+ .eventinp p { width: 100%; }
+ p span.addev { background: #1F8096; max-width: 100px; padding: 10px; margin-top: 10px; border-radius: 5px; }
+ p span.addev:hover { cursor: pointer; color: #ccc; }
+ p.noev { margin: 10px 0 10px 10px; }
+ .eventinp ul:first-child { float: left; }
+.eventinp ul li { float: left; height: 32px; }
+.eventinp ul li input { font-size: 14px; padding: 5px; border: 1px solid #ccc; border-radius: 3px; }
+.eventinp ul li input:disabled { background: #fff7f7; color: #827c7c; }
+.eventinp ul li input:enabled { border: 1px solid #242121; }
+.eventinp .edit span, .eventinp .del span { margin: 7px 8px 0 10px; }
+.eventinp .d input { width: 50px; margin-right: 5px; }
+.eventinp .e input { width: 550px; }
+.eventinp ul li.edit span { color: #175766; }
+.eventinp ul li.del span { color: #931313; }
+.eventinp ul li.edit span:hover, .eventinp ul li.del span:hover { cursor: pointer; }
+ /* end calendar events */
